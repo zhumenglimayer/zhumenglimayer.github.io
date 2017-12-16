@@ -6,17 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/11 | ChiKu_Mayer的Blog</title>
+  <title>SSM的搭建配置 | ChiKu_Mayer的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大连海事10级">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ChiKu_Mayer的Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/11/index.html">
+  <meta name="description" content="本篇文章是Spring、SpringMVC和Mybatis（后面将以SSM简称）的基础搭建。 一、创建项目工程（1）、使用IDE创建Maven项目对项目进行简单的配置：将编译器和java构建路径的jre设置成合适的版本。 可能会遇到的问题：The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build">
+<meta name="keywords" content="Spring SpringMVC Mybatis Maven">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSM的搭建配置">
+<meta property="og:url" content="http://yoursite.com/2017/12/16/SSM的搭建配置/index.html">
 <meta property="og:site_name" content="ChiKu_Mayer的Blog">
-<meta property="og:description" content="大连海事10级">
+<meta property="og:description" content="本篇文章是Spring、SpringMVC和Mybatis（后面将以SSM简称）的基础搭建。 一、创建项目工程（1）、使用IDE创建Maven项目对项目进行简单的配置：将编译器和java构建路径的jre设置成合适的版本。 可能会遇到的问题：The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build">
+<meta property="og:image" content="http://yoursite.com/assets/img/SSM/SSM-1.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/SSM/SSM-2.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/SSM/SSM-3.jpg">
+<meta property="og:updated_time" content="2017-12-16T09:01:14.687Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ChiKu_Mayer的Blog">
-<meta name="twitter:description" content="大连海事10级">
+<meta name="twitter:title" content="SSM的搭建配置">
+<meta name="twitter:description" content="本篇文章是Spring、SpringMVC和Mybatis（后面将以SSM简称）的基础搭建。 一、创建项目工程（1）、使用IDE创建Maven项目对项目进行简单的配置：将编译器和java构建路径的jre设置成合适的版本。 可能会遇到的问题：The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build">
+<meta name="twitter:image" content="http://yoursite.com/assets/img/SSM/SSM-1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ChiKu_Mayer的Blog" type="application/atom+xml">
   
@@ -154,60 +160,154 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-SSM的搭建配置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/07/First-Article-For-Test/" class="archive-article-date">
-  	<time datetime="2017-11-07T12:03:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/07/First-Article-For-Test/">First Article For Test</a>
+    <h1 class="article-title" itemprop="name">
+      SSM的搭建配置
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/16/SSM的搭建配置/" class="archive-article-date">
+  	<time datetime="2017-12-16T05:02:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本篇文章是Spring、SpringMVC和Mybatis（后面将以SSM简称）的基础搭建。</p>
+<h2 id="一、创建项目工程"><a href="#一、创建项目工程" class="headerlink" title="一、创建项目工程"></a>一、创建项目工程</h2><h3 id="（1）、使用IDE创建Maven项目"><a href="#（1）、使用IDE创建Maven项目" class="headerlink" title="（1）、使用IDE创建Maven项目"></a>（1）、使用IDE创建Maven项目</h3><p>对项目进行简单的配置：将编译器和java构建路径的jre设置成合适的版本。</p>
+<p>可能会遇到的问题：<br>The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path</p>
+<p>解决：<br>打开项目的Build Path 点击Add Library…</p>
+<a id="more"></a>
+<p><img src="/assets/img/SSM/SSM-1.jpg" alt="SSM-1"></p>
+<p>设置Server Runtime</p>
+<p><img src="/assets/img/SSM/SSM-2.jpg" alt="SSM-2"><br><img src="/assets/img/SSM/SSM-3.jpg" alt="SSM-3"></p>
+<h3 id="（2）、引入项目依赖的jar包"><a href="#（2）、引入项目依赖的jar包" class="headerlink" title="（2）、引入项目依赖的jar包"></a>（2）、引入项目依赖的jar包</h3><h4 id="1）基础的jar包"><a href="#1）基础的jar包" class="headerlink" title="1）基础的jar包"></a>1）基础的jar包</h4><p>Spring和SpringMVC：spring-webmvc、spring-jdbc、spring-aspects、spring-test(测试用)</p>
+<p>Mybatis：mybatis、mybatis-spring（适配包）</p>
+<p>数据库连接池和驱动：c3p0、mysql-connector-java</p>
+<p>其他：jstl、javax.servlet-api</p>
+<h4 id="2）额外的可选jar包"><a href="#2）额外的可选jar包" class="headerlink" title="2）额外的可选jar包"></a>2）额外的可选jar包</h4><p>Mybatis MBG（逆向工程）: mybatis-generator-core</p>
+<p>引入pagehepler分页插件: pagehelper</p>
+<p>json的支持: jackson-databind</p>
+<h2 id="二、配置web-xml"><a href="#二、配置web-xml" class="headerlink" title="二、配置web.xml"></a>二、配置web.xml</h2><h3 id="1-启动Spring-IOC容器"><a href="#1-启动Spring-IOC容器" class="headerlink" title="(1)启动Spring IOC容器"></a>(1)启动Spring IOC容器</h3><p>web.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">context-param</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:spring.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">context-param</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">listener</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">listener-class</span>&gt;</span></div><div class="line">        org.springframework.web.context.ContextLoaderListener</div><div class="line">    <span class="tag">&lt;/<span class="name">listener-class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">listener</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="2-SpringMVC前端控制器"><a href="#2-SpringMVC前端控制器" class="headerlink" title="(2)SpringMVC前端控制器"></a>(2)SpringMVC前端控制器</h3><p>web.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>springDispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span></div><div class="line">            org.springframework.web.servlet.DispatcherServlet</div><div class="line">        <span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">init-param</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:springmvc.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="三、配置SpringMVC文件"><a href="#三、配置SpringMVC文件" class="headerlink" title="三、配置SpringMVC文件"></a>三、配置SpringMVC文件</h2><p>springmvc.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.mayer.crud"</span> <span class="attr">use-default-filters</span>=<span class="string">"false"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">context:include-filter</span> <span class="attr">type</span>=<span class="string">"annotation"</span> <span class="attr">expression</span>=<span class="string">"org.springframework.stereotype.Controller"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--配置视图解析器  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"prefix"</span> <span class="attr">value</span>=<span class="string">"/WEB-INF/pages/"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"suffix"</span> <span class="attr">value</span>=<span class="string">".jsp"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--标准配置  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">mvc:annotation-driven</span>&gt;</span><span class="tag">&lt;/<span class="name">mvc:annotation-driven</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">mvc:default-servlet-handler</span>/&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="四、配置Spring文件"><a href="#四、配置Spring文件" class="headerlink" title="四、配置Spring文件"></a>四、配置Spring文件</h2><p>spring.xml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--包扫描  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.mayer.crud"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">context:exclude-filter</span> <span class="attr">type</span>=<span class="string">"annotation"</span> <span class="attr">expression</span>=<span class="string">"org.springframework.stereotype.Controller"</span>/&gt;</span>	</div><div class="line"><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--配置数据源  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">context:property-placeholder</span> <span class="attr">location</span>=<span class="string">"classpath:db.properties"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"dataSource"</span> <span class="attr">class</span>=<span class="string">"com.mchange.v2.c3p0.ComboPooledDataSource"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbcUrl"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.jdbcurl&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driverClass"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.driverclass&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"user"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.user&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.password&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--Mybatis的整合  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"sqlSessionFactory"</span> <span class="attr">class</span>=<span class="string">"org.mybatis.spring.SqlSessionFactoryBean"</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!--Mybatis全局配置文件的位置  --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"configLocation"</span> <span class="attr">value</span>=<span class="string">"classpath:mybatis-config.xml"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> <span class="attr">ref</span>=<span class="string">"dataSource"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!--指定Mybatis的mapper文件位置  --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"mapperLocations"</span> <span class="attr">value</span>=<span class="string">"classpath:mappers/*.xml"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--配置扫描器，将Mybatis接口的实现加入到IOC容器中  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.mybatis.spring.mapper.MapperScannerConfigurer"</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!--扫描所有dao接口的实现，加入到IOC容器中  --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"basePackage"</span> <span class="attr">value</span>=<span class="string">"com.mayer.crud.dao"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--配置事务管理器  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"transactionManager"</span> <span class="attr">class</span>=<span class="string">"org.springframework.jdbc.datasource.DataSourceTransactionManager"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> <span class="attr">ref</span>=<span class="string">"dataSource"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--默认使用注解来管理事务行为  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">tx:annotation-driven</span> <span class="attr">transaction-manager</span>=<span class="string">"transactionManager"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="四、配置Mybatis的文件"><a href="#四、配置Mybatis的文件" class="headerlink" title="四、配置Mybatis的文件"></a>四、配置Mybatis的文件</h2><h3 id="（1）、简单的配置文件设置"><a href="#（1）、简单的配置文件设置" class="headerlink" title="（1）、简单的配置文件设置"></a>（1）、简单的配置文件设置</h3><p>mybatis-config.xml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">settings</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"mapUnderscoreToCamelCase"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">settings</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">plugins</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">plugin</span> <span class="attr">interceptor</span>=<span class="string">"com.github.pagehelper.PageInterceptor"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"reasonable"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="（2）、使用Mybatis-MBG自动生成javaBean、mapper等文件"><a href="#（2）、使用Mybatis-MBG自动生成javaBean、mapper等文件" class="headerlink" title="（2）、使用Mybatis MBG自动生成javaBean、mapper等文件"></a>（2）、使用Mybatis MBG自动生成javaBean、mapper等文件</h3><p>使用Mybatis MBG可以简单地加快开发速度<br>1)使用mbg.xml文件生成<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">generatorConfiguration</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">context</span> <span class="attr">id</span>=<span class="string">"DB2Tables"</span> <span class="attr">targetRuntime</span>=<span class="string">"MyBatis3"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">commentGenerator</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"suppressAllComments"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">commentGenerator</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">jdbcConnection</span> <span class="attr">driverClass</span>=<span class="string">"com.mysql.jdbc.Driver"</span></span></div><div class="line"><span class="tag">			<span class="attr">connectionURL</span>=<span class="string">"jdbc:mysql://127.0.0.1:3306/ssm_crud"</span> <span class="attr">userId</span>=<span class="string">"****"</span></span></div><div class="line"><span class="tag">			<span class="attr">password</span>=<span class="string">"******"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">jdbcConnection</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">javaTypeResolver</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"forceBigDecimals"</span> <span class="attr">value</span>=<span class="string">"false"</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">javaTypeResolver</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--指定javabean生成的位置 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">javaModelGenerator</span> <span class="attr">targetPackage</span>=<span class="string">"com.mayer.crud.bean"</span></span></div><div class="line"><span class="tag">			<span class="attr">targetProject</span>=<span class="string">".\src\main\java"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"enableSubPackages"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"trimStrings"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">javaModelGenerator</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--指定sql映射文件的位置 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">sqlMapGenerator</span> <span class="attr">targetPackage</span>=<span class="string">"mappers"</span></span></div><div class="line"><span class="tag">			<span class="attr">targetProject</span>=<span class="string">".\src\main\resources"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"enableSubPackages"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">sqlMapGenerator</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--指定dao接口生成的位置，mapper接口 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">javaClientGenerator</span> <span class="attr">type</span>=<span class="string">"XMLMAPPER"</span></span></div><div class="line"><span class="tag">			<span class="attr">targetPackage</span>=<span class="string">"com.mayer.crud.dao"</span> <span class="attr">targetProject</span>=<span class="string">".\src\main\java"</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"enableSubPackages"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">javaClientGenerator</span>&gt;</span></div><div class="line">		<span class="comment">&lt;!--table指定每个表的生成策略 --&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">table</span> <span class="attr">tableName</span>=<span class="string">"tbl_emp"</span> <span class="attr">domainObjectName</span>=<span class="string">"Employee"</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">table</span> <span class="attr">tableName</span>=<span class="string">"tbl_dept"</span> <span class="attr">domainObjectName</span>=<span class="string">"Department"</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">context</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">generatorConfiguration</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>2)使用java程序生成<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MBGTest</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">		List&lt;String&gt; warnings = <span class="keyword">new</span> ArrayList&lt;String&gt;();</div><div class="line">		<span class="keyword">boolean</span> overwrite = <span class="keyword">true</span>;</div><div class="line">		File configFile = <span class="keyword">new</span> File(<span class="string">"mbg.xml"</span>);</div><div class="line">		ConfigurationParser cp = <span class="keyword">new</span> ConfigurationParser(warnings);</div><div class="line">		Configuration config = cp.parseConfiguration(configFile);</div><div class="line">		DefaultShellCallback callback = <span class="keyword">new</span> DefaultShellCallback(overwrite);</div><div class="line">		MyBatisGenerator myBatisGenerator = <span class="keyword">new</span> MyBatisGenerator(config, callback, warnings);</div><div class="line">		myBatisGenerator.generate(<span class="keyword">null</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>生成的只是简单的一些文件，具体还得自己修改使得能跟上自己的需求</p>
+<h2 id="五、总结"><a href="#五、总结" class="headerlink" title="五、总结"></a>五、总结</h2><p>以上便是SSM工程的前期的简单搭建配置。一些细节的工作会随着项目进行而更正修改。比如搭建完后利用spring-test进行简单的测试等。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>对吧，我很酷吧。<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Redis Windows</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Spring SpringMVC Mybatis Maven</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/11/07/First-Article-For-Test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">First Article For Test</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、创建项目工程"><span class="toc-number">1.</span> <span class="toc-text">一、创建项目工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）、使用IDE创建Maven项目"><span class="toc-number">1.1.</span> <span class="toc-text">（1）、使用IDE创建Maven项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）、引入项目依赖的jar包"><span class="toc-number">1.2.</span> <span class="toc-text">（2）、引入项目依赖的jar包</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1）基础的jar包"><span class="toc-number">1.2.1.</span> <span class="toc-text">1）基础的jar包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2）额外的可选jar包"><span class="toc-number">1.2.2.</span> <span class="toc-text">2）额外的可选jar包</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、配置web-xml"><span class="toc-number">2.</span> <span class="toc-text">二、配置web.xml</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-启动Spring-IOC容器"><span class="toc-number">2.1.</span> <span class="toc-text">(1)启动Spring IOC容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-SpringMVC前端控制器"><span class="toc-number">2.2.</span> <span class="toc-text">(2)SpringMVC前端控制器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、配置SpringMVC文件"><span class="toc-number">3.</span> <span class="toc-text">三、配置SpringMVC文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、配置Spring文件"><span class="toc-number">4.</span> <span class="toc-text">四、配置Spring文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、配置Mybatis的文件"><span class="toc-number">5.</span> <span class="toc-text">四、配置Mybatis的文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）、简单的配置文件设置"><span class="toc-number">5.1.</span> <span class="toc-text">（1）、简单的配置文件设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）、使用Mybatis-MBG自动生成javaBean、mapper等文件"><span class="toc-number">5.2.</span> <span class="toc-text">（2）、使用Mybatis MBG自动生成javaBean、mapper等文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、总结"><span class="toc-number">6.</span> <span class="toc-text">五、总结</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -234,8 +334,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
